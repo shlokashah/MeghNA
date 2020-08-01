@@ -10,7 +10,7 @@ body
     left:0;
     width: 100%;
     height: 100vh;
-    background:url(bg1.jpg);
+    background:black;
     background-size: cover;
 }
 .cloud
