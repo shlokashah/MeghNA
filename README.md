@@ -55,19 +55,19 @@ and visible waves channels are provided.
 
 ##### 1. Original Satellite Image
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Original_Capture.png?raw=True)
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Original_Capture.png?raw=True)
 
 ##### 2. Clouds Mask
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Cloud_Mask.png?raw=True)
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Cloud_Mask.png?raw=True)
 
 ##### 3. Cloud Edges Marked
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Edges_Marked.png?raw=True)
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Edges_Marked.png?raw=True)
 
 ##### KMeans Result - Labelled Clouds
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Clouds_Labelled.png?raw=True)
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Clouds_Labelled.png?raw=True)
 
 ### Mask RCNN
 
