@@ -10,7 +10,7 @@ Develop and implement an algorithm to:
 - Predict the location of clouds in subsequent images.
 
 ***Solution***
-An interactive web tool that allows users to interact with our cloud analytics engine
+An interactive web tool and mobile app that allows users to interact with our cloud analytics engine
 offering:
 1. **Cloud detection**
 - Using clustering and feature thresholds - **KMeans Clustering**
