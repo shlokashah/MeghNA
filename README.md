@@ -31,6 +31,7 @@ and visible waves channels are provided.
 ## Folder Walkthrough
 | Folder Name | Service |
 |--|--|
+| [KMeans+MPA](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/KMeans+MPA) |  Code for cloud detection and motion prediction with KMeans+MPA
 | [CNN_LSTM](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/CNN_LSTM) |  Code for cloud motion prediction using CNN+LSTM
 | [Mask_RCNN](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Mask%20RCNN) | Code for cloud detection using Mask RCNN
 | [classification](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/classification) | Code for cloud classification types
@@ -60,15 +61,9 @@ and visible waves channels are provided.
 
 ##### 2. Clouds Mask
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Cloud_Mask.png?raw=True)
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/kmeans.png?raw=True)
 
-##### 3. Cloud Edges Marked
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Edges_Marked.png?raw=True)
-
-##### KMeans Result - Labelled Clouds
-
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Clouds_Labelled.png?raw=True)
 
 ### Mask RCNN
 
