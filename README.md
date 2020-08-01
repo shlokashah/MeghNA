@@ -24,7 +24,7 @@ offering:
 - Based on cloud type, TIR1 and VIS count over infrared and visible satellite images.
 
 ***Dataset Study***
-- INSAT captures through thermal infrared
+- INSAT-3D captures through thermal infrared
 and visible waves channels are provided.
 - Images are captured every 30 minutes.
 
