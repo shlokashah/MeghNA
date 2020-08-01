@@ -1,4 +1,4 @@
-
+﻿
 # Team 11008, ParyavaranAI
 ## MeghNA - Megh Nowcasting and Analytics
 
@@ -6,8 +6,8 @@
 
 ***Problem Statement:***
 Develop and implement an algorithm to:
-	• Detect clouds in INSAT satellite images and
-	• Predict the location of clouds in subsequent images.
+- Detect clouds in INSAT satellite images and
+- Predict the location of clouds in subsequent images.
 
 ***Solution***
 An interactive web tool and mobile app that allows users to interact with our cloud analytics engine
@@ -24,9 +24,9 @@ offering:
 - Based on cloud type, TIR1 and VIS count over infrared and visible satellite images.
 
 ***Dataset Study***
-	• INSAT captures through thermal infrared
+- INSAT captures through thermal infrared
 and visible waves channels are provided.
-	• Images are captured every 30 minutes.
+- Images are captured every 30 minutes.
 
 ## Folder Walkthrough
 | Folder Name | Service |
@@ -65,7 +65,7 @@ and visible waves channels are provided.
 
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Edges_Marked.png?raw=True)
 
-##### KNN Result - Labelled Clouds
+##### KMeans Result - Labelled Clouds
 
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/KNN_Clouds_Labelled.png?raw=True)
 
@@ -131,9 +131,10 @@ and visible waves channels are provided.
 
 #### Results:
 
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_2.jpeg?raw=True)
+
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_1.jpeg?raw=True)
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_2.jpeg?raw=True)
 
 ##### Model H5 Link
 [CNN LSTM](https://drive.google.com/file/d/1Th9ikwmyTGipz6Z8sfTj4QIsPR5whtOO/view?usp=sharing)
