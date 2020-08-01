@@ -1,35 +1,38 @@
 
-#  MeghNA 
+# Team 11008, ParyavaranAI
+## MeghNA - Megh Nowcasting and Analytics
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ***Problem Statement:***
 Develop and implement an algorithm to:
-• Detect clouds in INSAT satellite images and
-• Predict the location of clouds in subsequent images.
+	â€¢ Detect clouds in INSAT satellite images and
+	â€¢ Predict the location of clouds in subsequent images.
 
 ***Solution***
 An interactive web tool and mobile app that allows users to interact with our cloud analytics engine
 offering:
-1. Cloud detection
+1. **Cloud detection**
 - Using clustering and feature thresholds - **KMeans Clustering**
 - Using Neural Networks - **Mask RCNN** 
-3. Nowcasting: Cloud motion prediction
+2. **Nowcasting: Cloud motion prediction**
 - Using modified Mean Path Adjustment **MPA**
 - Using Neural Networks - **CNN + LSTM**
-4. Cloud classification
+3. **Cloud classification**
 - Using infrared v/s visible image membership
-5. Cloud attributes
+4. **Cloud attributes**
 - Based on cloud type, TIR1 and VIS count over infrared and visible satellite images.
 
 ***Dataset Study***
-• INSAT captures through thermal infrared
+	â€¢ INSAT captures through thermal infrared
 and visible waves channels are provided.
-• Images are captured every 30 minutes.
+	â€¢ Images are captured every 30 minutes.
 
 ## Folder Walkthrough
 | Folder Name | Service |
 |--|--|
-| CNN_LSTM |  Code for cloud motion prediction using CNN+LSTM
-| Mask_RCNN | Code for cloud detection using Mask RCNN
+| [CNN_LSTM](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/CNN_LSTM) |  Code for cloud motion prediction using CNN+LSTM
+| [Mask_RCNN](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Mask%20RCNN) | Code for cloud detection using Mask RCNN
 
 ## Technology Used
 
@@ -150,3 +153,4 @@ We take the given mask, convert it to corresponding temperature values and then 
 
 ## References 
 [Links to paper referred](https://drive.google.com/file/d/17kpehylbqtQWQpIVDHA670K9nCZei4Ul/view)
+
