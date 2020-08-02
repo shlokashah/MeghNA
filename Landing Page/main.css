@@ -1,0 +1,117 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:url(cloud.png);
+  animation: animate 30s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0px;
+    }
+    100%
+    {
+        background-position:5440px;
+    }
+}
+.particles-js-canvas-el{
+  position: absolute;
+}
+#rheah1{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 200px;
+  font-style: oblique;
+  display: none;
+}
+.logo
+{
+  display: none;
+  margin-left: 135px;
+  margin-right: auto;
+  height: 400px;
+  padding-top: 50px;
+}
+#rheap1{
+  color: #00FFFF;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  display: none;
+  padding-top: 0%;
+}
+#overview{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  display: none;
+}
+#features{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  display: none;
+}
+#ovlist{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  /* display: none; */
+}
+/* #ovlist {
+  list-style-type: none;
+  position: relative;
+  padding-left: 15px;
+} */
+#ov1,#ov2,#ov3,#ov4,#rheaimg{
+  display: none;
+}
+#ov51,#ov52,#ov53,#ov54{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  /* display: none; */
+}
+#rheaimg,#rheaimg2,#rheaimg3,#rheaimg4,#rheaimg5{
+  /* display: block; */
+margin-left: 25%;
+margin-right: auto;
+width: 50%;
+}
+#ovlist:before {
+  content: "\25BA \0020";
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+nav a:hover{
+  color:red;
+}
+.navbar a{
+  color: white;
+}
+.navbar
+ { 
+   margin-bottom: 0px;
+   background-color: black !important;
+   font-size: 20px;
+   }

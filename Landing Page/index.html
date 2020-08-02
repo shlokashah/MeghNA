@@ -1,15 +1,50 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>CSS Clouds</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="cloud">
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".logo").fadeTo(15000,3).fadeIn(10000);
+      $("#rheap1").fadeTo(35000,5).fadeIn(20000);
+  });
+  </script>
+</head>
+<body>
+  <!-- particles.js container -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" style="color: white ; font-family: Allerta Stencil, Sans-serif; font-size: 30px; " href="index.html">MeghNA</a>
         </div>
-        <p>MeghNA</p>
-    </body>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="info.html#blank" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-user"></span> Overview</a></li>
+          <li><a href="info.html#blank2" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-book"></span>Features</a></li>
+          <li><a href="#" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-facetime-video"></span>Live Demonstration</a></li>
+        </ul>
+      </div>
+    </nav>
+  <section id="particles-js">
+    <figure>
+      <img class='logo' src="meghna.png"></img>
+      <br>
+      <figcaption id='rheap1'>An Interactive, End to End, Cloud Analytics Engine</figcaption>
+    </figure>
+          <!-- <span id='rheah1'><img class="logo" src="meghna.png"></img><span id='rheap1'>An Interactive, End to End, Cloud Analytics Engine</span></span> -->
+          </section>
+  <!-- <script src="particles.min.js"></script>
+  <script src="deepMerge.js"></script> -->
+  <script src="main.js"></script>
+
+</body>
+
 </html>
