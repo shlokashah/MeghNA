@@ -1,0 +1,129 @@
+<app-navbar>
+
+</app-navbar>
+<div class="container-fluid">
+    <br/>
+    <!-- Spinner Code -->
+    <ngx-spinner bdOpacity = 0.9 bdColor = "#333" size = "medium" color = "#fff" type = "square-jelly-box"
+    [fullScreen] = "true">
+      <p style="color: white" >Processing your image</p>
+    </ngx-spinner>
+    <div class="card shadow p-3 mb-5 bg-white rounded" *ngIf="showWorkFlow1==true">
+      <!-- ROW 1: Title Row -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 style="text-align: center;">Cloud Analytics</h2>
+          <h6 style="text-align: center;">Using K-Means for Detection and Mean Path Adjustment for Motion Prediction</h6>
+          <hr/>
+        </div>
+      </div>
+      <!-- ROW 2: Select Cloud Detection Algorithm -->
+      <!-- <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <label>
+            Select the detection algorithm you want to visualize:
+          </label>
+          <select [(ngModel)]="detectionAlgorithm" class="form-control" id="detectionAlgorithm" name="detectionAlgorithm" (ngModelChange)="selectDetectionAlgo()">
+            <option ngValue="kmeans.png">K-Means</option>
+            <option ngValue="mask_rcnn.png">Mask RCNN</option>
+          </select>
+        </div>
+      </div>
+      <br/> -->
+      <!-- ROW 3: Data -->
+      <div class="row">
+        <!-- COLUMN 1: Display Image -->
+        <div class="col-md-4 col-sm-12">
+          <canvas id="myCanvas"></canvas>
+        </div>
+        <div class="col-md-4 col-sm-6" style="padding-left: 40px;">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col" style="text-align: center;">Cloud</th>
+                <th scope="col" style="text-align: center;">CoM Co-ordinates</th>
+                <th scope="col" style="text-align: center;">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let output of response.kmeans">
+                <td scope="row">{{output[0]}}</td>
+                <td>({{output[1]}},{{output[2]}})</td>
+                <td>{{output[5]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-11 col-sm-11">
+
+        </div>
+        <div class="col-md-1 col-sm-1">
+          <button class="btn btn-primary" (click)="toggleWorkFlow()">Toggle</button>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow p-3 mb-5 bg-white rounded" *ngIf="showWorkFlow1==false">
+      <!-- ROW 1: Title Row -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h2 style="text-align: center;">Cloud Analytics</h2>
+          <h6 style="text-align: center;">Using Mask RCNN for Detection and CNN-LSTM for Motion Prediction</h6>
+          <hr/>
+        </div>
+      </div>
+      <!-- ROW 2: Select Cloud Detection Algorithm -->
+      <!-- <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <label>
+            Select the detection algorithm you want to visualize:
+          </label>
+          <select [(ngModel)]="detectionAlgorithm" class="form-control" id="detectionAlgorithm" name="detectionAlgorithm" (ngModelChange)="selectDetectionAlgo()">
+            <option ngValue="kmeans.png">K-Means</option>
+            <option ngValue="mask_rcnn.png">Mask RCNN</option>
+          </select>
+        </div>
+      </div>
+      <br/> -->
+      <!-- ROW 3: Data -->
+      <div class="row">
+        <!-- COLUMN 1: Display Image -->
+        <div class="col-md-6 col-sm-12">
+          <img src="../assets/img/mask_rcnn.png" width="563" height="382" class="img-fluid" id="workflow2Elem" #workflow2Elem>
+        </div>
+      </div>
+      <div class="row">
+        <!-- COLUMN 2: Display Details for (x,y) in image -->
+        <div class="col-md-1">
+
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col" style="text-align: center;">Cloud</th>
+                <th scope="col" style="text-align: center;">CoM Co-ordinates</th>
+                <th scope="col" style="text-align: center;">Type</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let output of response.mask">
+                <td scope="row">{{output[0]}}</td>
+                <td>({{output[2]}},{{output[3]}})</td>
+                <td>{{output[4]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-11 col-sm-11">
+
+        </div>
+        <div class="col-md-1 col-sm-1">
+          <button class="btn btn-primary" (click)="toggleWorkFlow()">Toggle</button>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,129 @@
+import { Component, OnInit, ViewChild, ElementRef, ViewChildren, ChangeDetectorRef } from '@angular/core';
+import * as $ from 'jquery';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { ApiCallerService } from '../services/api-caller.service';
+
+@Component({
+  selector: 'app-cloud-detect',
+  templateUrl: './cloud-detect.component.html',
+  providers: [ NgxSpinnerService, ApiCallerService ],
+  styleUrls: ['./cloud-detect.component.css']
+})
+export class CloudDetectComponent implements OnInit {
+
+  baseUrl = 'http://76eac9623e94.ngrok.io/';
+
+  detectionAlgorithm: string;
+  imgPath: string;
+  showWorkFlow1 = true;
+
+  response = { };
+
+  constructor(private spinner: NgxSpinnerService, private changeDetectorRef: ChangeDetectorRef, private _api: ApiCallerService) { }
+
+  ngOnInit() {
+    this._api.doGetRequest('/predictCloud').subscribe(res => {
+      console.log(res);
+      let x = 0;
+      let y = 0;
+      this.imgPath = this.baseUrl + res.image[1];
+      this.response = res;
+      this.response['kmeans'].forEach(element => {
+        element[1] = parseFloat(element[1]).toFixed(2);
+        element[2] = parseFloat(element[2]).toFixed(2);
+      });
+      this.drawCanvas(this.imgPath);
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas.getContext('2d');
+      // ctx.clearRect(0, 0, canvas.width, canvas.height);
+      canvas.onmousedown = function(e) {
+        const rect = canvas.getBoundingClientRect();
+        x = e.clientX - rect.left;
+        y = e.clientY - rect.top;
+        const marker = new Image();
+        marker.src = 'https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png';
+        ctx.drawImage(marker, x, y, 25, 25);
+        return [x, y];
+      };
+    });
+  }
+
+  drawCanvas(imgPath) {
+    const c = <HTMLCanvasElement>document.getElementById('myCanvas');
+    const ctx = c.getContext('2d');
+    const img = new Image();
+    img.onload = function() {
+      c.width = 500;
+      c.height = 500;
+      ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, 600, 600);
+    };
+    img.src = imgPath;
+  }
+
+  getCursorPosition(canvas, event) {
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    console.log('x: ' + x + ' y: ' + y);
+  }
+
+  // dispatchHookOnCanvasClick() {
+  //   document.getElementById('myCanvas').onclick = function(event) {
+  //     // if(document.getElementById('marker') !== undefined) {
+  //     //   document.getElementById('marker').remove();
+  //     // }
+  //     var marker = document.createElement('div');
+  //     marker.setAttribute("id","marker");
+  //     marker.style.position = 'absolute';
+  //     marker.style.top = event.pageY + 'px';
+  //     marker.style.left = event.pageX + 'px';
+  //     marker.style.width = '25px';
+  //     marker.style.height = '25px';
+  //     // marker.style.backgroundImage = "url('https://cdn0.iconfinder.com/data/icons/small-n-flat/24/678111-map-marker-512.png')";
+  //     marker.style.background = "#000";
+  //     document.getElementsByTagName('canvas')[0].append(marker);
+  //   };
+  // }
+
+  // dispatchHookOnW1() {
+    // this.changeDetectorRef.detectChanges();
+    // $(this.w1.nativeElement)
+    //   .on('click', (event) => {
+    //     this.spinner.show();
+    //     this.x = event.pageX - this.w1.nativeElement.offsetLeft;
+    //     this.y = event.pageY - this.w1.nativeElement.offsetTop;
+    //     console.log("("+this.x+","+this.y+")");
+    //     setTimeout(() => {
+    //       this.spinner.hide();
+    //     }, 2000);
+    //   });
+  // }
+
+  // dispatchHookOnW2() {
+  //   this.changeDetectorRef.detectChanges();
+  //   $(this.w2.nativeElement)
+  //     .on('click', (event) => {
+  //       this.spinner.show();
+  //       this.x = event.pageX - this.w2.nativeElement.offsetLeft;
+  //       this.y = event.pageY - this.w2.nativeElement.offsetTop;
+  //       console.log("("+this.x+","+this.y+")");
+  //       setTimeout(() => {
+  //         this.spinner.hide();
+  //       }, 2000);
+  //     });
+  // }
+
+  // ngAfterViewInit() {
+  //   this.dispatchHookOnW1();
+  // }
+
+  selectDetectionAlgo() {
+    console.log(this.detectionAlgorithm);
+    this.imgPath = '../assets/img/' + this.detectionAlgorithm;
+  }
+
+  toggleWorkFlow() {
+    this.showWorkFlow1 = !this.showWorkFlow1;
+  }
+
+}
