@@ -65,8 +65,6 @@ and visible waves channels are provided.
 
 <img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/kmeans.png" height="300" width="500">
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/kmeans.png?raw=True)
-
 
 
 ### Mask RCNN
