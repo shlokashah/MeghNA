@@ -1,0 +1,57 @@
+<head>
+    <meta charset="utf-8">
+    <title>MeghNA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href='meghna.ico'>
+    <link rel="stylesheet" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#fheader").fadeIn(5000);
+          $("#features").fadeIn(5000);
+          $("#ov1").fadeTo(15000,5).fadeIn(1000);
+          $("#ov2").fadeTo(25000,4).fadeIn(1000);
+          $("#ov3").fadeTo(35000,3).fadeIn(1000);
+          $("#ov4").fadeTo(35000,3).fadeIn(1000);
+          $("#ov5").fadeTo(35000,3).fadeIn(1000);
+  
+    });
+    </script>
+  </head>
+  <body style="background-color: black; color: white;">
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" style="color: white ; font-family: Allerta Stencil, Sans-serif; font-size: 30px; " href="index.html">MeghNA</a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="info.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-facetime-video"></span> Overview</a></li>
+                      <li><a href="features.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-book"></span>Features</a></li>
+                      <li><a href="impact.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-flash"></span>Impact</a></li>
+                      <li><a href="team.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-user"></span>Team</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <br><br><br><br>
+          <!-- <a name="about"></a> -->
+
+              <h1 style="padding-left: 20px" id="features">FEATURES</h1>
+                <br>
+                <h2 id="fheader" style="padding-left: 20px">MeghNA provides the following functionalities and features relating to Cloud Analytics:</h2>
+                <br>
+                <ul id='ovlist'>
+                      <li id='ov1'>Cloud Detection: Given a TIR/VIS satellite image capture, clouds can be identified and pinpointed from the images and demarcated as per requirements.</li>
+                      <br>
+                      <li id='ov2'>Cloud Motion Prediction: A series of satellite images upto a particular timestamp can be used to nowcast the clouds and predict the future direction and motion. Forecasted cloud position images are returned accordingly.</li>
+                      <br>
+                      <li id='ov3'>Cloud Classification: Detected clouds are further classified into various types depending on temperature and height and such factors.</li>
+                      <br>
+                      <li id='ov4'>Cloud Attributes: Based on TIR1 & VIS1 counts, a lot of additional information relating to cloud attributes are returned, such as location, cloud top temp., cloud top height, etc. </li>
+                      <br>
+                      <li id='ov5'>Analytical Offerings: Cloud Analytics Report and Public APIs.</li>
+                    </ul> 
+  </body>

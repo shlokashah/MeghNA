@@ -46,6 +46,13 @@ canvas {
   height: 400px;
   padding-top: 50px;
 }
+#industries{
+  display:none;
+  margin-left: 135px;
+  margin-right: auto;
+  padding-top:50px;
+  height:400px;
+}
 #rheap1{
   color: #00FFFF;
   font-family: "Allerta Stencil", Sans-serif;
@@ -61,12 +68,25 @@ canvas {
   font-style: normal;
   display: none;
 }
-#features{
+#features,#impact,#team{
   color: white;
   font-family: "Allerta Stencil", Sans-serif;
   font-size: 100px;
   font-style: normal;
   display: none;
+}
+#fheader,#iheader{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  display: none;
+}
+#theader{
+  color: white;
+  font-family: "Allerta Stencil", Sans-serif;
+  font-size: 35px;
+  font-style: normal;
 }
 #ovlist{
   color: white;
@@ -75,27 +95,21 @@ canvas {
   font-style: normal;
   /* display: none; */
 }
-/* #ovlist {
-  list-style-type: none;
-  position: relative;
-  padding-left: 15px;
-} */
-#ov1,#ov2,#ov3,#ov4,#rheaimg{
+#ov1,#ov2,#ov3,#ov4,#ov5{
   display: none;
 }
-#ov51,#ov52,#ov53,#ov54{
-  color: white;
-  font-family: "Allerta Stencil", Sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  text-align: center;
-  /* display: none; */
+#parth,#shloka,#manan,#jimil,#aumkar,#anish{
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+  width:200px;
+  display:none;
 }
-#rheaimg,#rheaimg2,#rheaimg3,#rheaimg4,#rheaimg5{
-  /* display: block; */
-margin-left: 25%;
-margin-right: auto;
-width: 50%;
+#pjname,#ssname,#adname,#mdname,#jsname,#agname{
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Allerta Stencil", Sans-serif;
+  display: none;
 }
 #ovlist:before {
   content: "\25BA \0020";
@@ -115,3 +129,4 @@ nav a:hover{
    background-color: black !important;
    font-size: 20px;
    }
+

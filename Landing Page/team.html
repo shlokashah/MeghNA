@@ -1,0 +1,107 @@
+<head>
+    <meta charset="utf-8">
+    <title>MeghNA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href='meghna.ico'>
+    <link rel="stylesheet" media="screen" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#team").fadeIn(5000);
+          $("#parth").fadeIn(50000);
+          $("#shloka").fadeIn(50000);
+          $("#anish").fadeIn(50000);
+          $("#manan").fadeIn(50000);
+          $("#jimil").fadeIn(50000);
+          $("#aumkar").fadeIn(50000);
+          $("#pjname").fadeIn(50000);
+          $("#ssname").fadeIn(50000);
+          $("#adname").fadeIn(50000);
+          $("#mdname").fadeIn(50000);
+          $("#jsname").fadeIn(50000);
+          $("#agname").fadeIn(50000);
+          
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    typeWriter();
+});
+    </script>
+  </head>
+  <body style="background-color: black; color: white;">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="color: white ; font-family: Allerta Stencil, Sans-serif; font-size: 30px; " href="index.html">MeghNA</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="info.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-facetime-video"></span> Overview</a></li>
+                <li><a href="features.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-book"></span>Features</a></li>
+                <li><a href="impact.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-flash"></span>Impact</a></li>
+                <li><a href="team.html" style="color: white; font-family: Allerta Stencil, Sans-serif;"><span class="glyphicon glyphicon-user"></span>Team</a></li>
+              </ul>
+            </div>
+          </nav>
+          <br><br><br><br>
+    <!-- <a name="about"></a> -->
+
+        <h1 style="padding-left: 20px" id="team">TEAM</h1>
+        <br>
+        <h2 id="theader" style="padding-left: 20px"></h2>
+        <br><br>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                  <img id='parth' src='parth.jpg'>
+                  <br>
+                  <h3 id='pjname'>Parth Jardosh</h3>
+              </div>
+              <div class="col-lg-4">
+                  <img id='shloka' src='shloka.jpeg'>
+                  <br>
+                  <h3 id='ssname'>Shloka Shah</h3>
+              </div>
+              <div class="col-lg-4">
+                  <img id='anish' src='anish.jpg'>
+                  <br>
+                  <h3 id='adname' >Anish Dixit</h3>
+              </div>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img id='manan' src='manan.jpg'>
+                    <br>
+                    <h3 id='mdname'>Manan Doshi</h3>
+                </div>
+                <div class="col-lg-4">
+                    <img id='jimil' src='jimil.jpeg'>
+                    <br>
+                    <h3 id='jsname' >Jimil Shah</h3>
+                </div>
+                <div class="col-lg-4">
+                    <img id='aumkar' src='aumkar.jpg'>
+                    <br>
+                    <h3 id='agname' >Aumkar Gadekar</h3>
+                </div>
+            </div>
+          </div>
+
+        <script>
+            var i = 0;
+            var txt = 'We are ParyavaranAI, a team of 6 students in their Final Year of Computer Engineering from Sardar Patel Institute of Technology, Mumbai. We are passionate developers and full time problem solvers and aim to use technology to provide simple, effective solutions to real world problems.';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("theader").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            </script>
+        <br><br><br>
+</body>
