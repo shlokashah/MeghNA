@@ -1,6 +1,7 @@
-﻿
+﻿![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro logo.webp?raw=True)
 # Team 11008, ParyavaranAI
 ## MeghNA - Megh Nowcasting and Analytics
+![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/logo.png?raw=True)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
