@@ -37,6 +37,8 @@ and visible waves channels are provided.
 | [CNN_LSTM](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/CNN_LSTM) |  Code for cloud motion prediction using CNN+LSTM
 | [Mask_RCNN](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Mask%20RCNN) | Code for cloud detection using Mask RCNN
 | [classification](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/classification) | Code for cloud classification types
+| [MeghNA](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/MeghNA) | Code for the User Interface of the tool
+| [backend](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/backend) | Django REST API's
 
 ## Technology Used
 
