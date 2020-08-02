@@ -14,6 +14,7 @@
         <div class="col-md-12 col-sm-12">
           <h2 style="text-align: center;">Cloud Analytics</h2>
           <h6 style="text-align: center;">Using K-Means for Detection and Mean Path Adjustment for Motion Prediction</h6>
+          <p style="text-align: center;">Cloud Playground: {{cloudTifPath}}</p>
           <hr/>
         </div>
       </div>
@@ -33,33 +34,46 @@
       <!-- ROW 3: Data -->
       <div class="row">
         <!-- COLUMN 1: Display Image -->
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-5 col-sm-12" id="canvasDiv">
           <canvas id="myCanvas"></canvas>
         </div>
-        <div class="col-md-4 col-sm-6" style="padding-left: 40px;">
-          <table class="table table-bordered table-striped">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col" style="text-align: center;">Cloud</th>
-                <th scope="col" style="text-align: center;">CoM Co-ordinates</th>
-                <th scope="col" style="text-align: center;">Type</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let output of response.kmeans">
-                <td scope="row">{{output[0]}}</td>
-                <td>({{output[1]}},{{output[2]}})</td>
-                <td>{{output[5]}}</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-md-3 col-sm-6" style="padding-left: 40px;">
+          <div class="row">
+            <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col" style="text-align: center;">Colour</th>
+                  <th scope="col" style="text-align: center;">Cloud</th>
+                  <th scope="col" style="text-align: center;">CoM Co-ordinates</th>
+                  <th scope="col" style="text-align: center;">Type</th>
+                  <th scope="col" style="text-align: center;">Predicted CoM Co-ordinates</th>
+                  <th scope="col" style="text-align: center;">Error</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let output of data; let i = index">
+                  <td *ngIf="i==0" style="background-color: #5C5C5C;">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td *ngIf="i==1" style="background-color: #7B7B7B;">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td *ngIf="i==2" style="background-color: #B6B6B6;">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td scope="row">{{output[0]}}</td>
+                  <td>({{output[1]}},{{output[2]}})</td>
+                  <td>{{output[3]}}</td>
+                  <td>({{output[4]}},{{output[5]}})</td>
+                  <td>{{output[6]}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-11 col-sm-11">
+        <div class="col-md-10 col-sm-10">
 
         </div>
-        <div class="col-md-1 col-sm-1">
+        <div class="col-md-1 col-sm-6">
+          <button class="btn btn-primary" (click)="clearCanvas()">Clear</button>
+        </div>
+        <div class="col-md-1 col-sm-6">
           <button class="btn btn-primary" (click)="toggleWorkFlow()">Toggle</button>
         </div>
       </div>
@@ -69,7 +83,8 @@
       <div class="row">
         <div class="col-md-12 col-sm-12">
           <h2 style="text-align: center;">Cloud Analytics</h2>
-          <h6 style="text-align: center;">Using Mask RCNN for Detection and CNN-LSTM for Motion Prediction</h6>
+          <h6 style="text-align: center;">Using Mask RCNN for Detection and CNN-LSTMs for Motion Prediction</h6>
+          <p style="text-align: center;">Cloud Playground: {{cloudTifPath}}</p>
           <hr/>
         </div>
       </div>
@@ -90,11 +105,14 @@
       <div class="row">
         <!-- COLUMN 1: Display Image -->
         <div class="col-md-6 col-sm-12">
-          <img src="../assets/img/mask_rcnn.png" width="563" height="382" class="img-fluid" id="workflow2Elem" #workflow2Elem>
+          <img [src]="maskOutput" width="563" height="382" class="img-fluid" id="workflow2Elem" #workflow2Elem>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <p class="card-text" style="text-align: center;">MSE: {{mse}}, SSIM: {{ssim}}</p>
+          <img [src]="gifPath" width="563" height="382" class="img-fluid">
         </div>
       </div>
-      <div class="row">
-        <!-- COLUMN 2: Display Details for (x,y) in image -->
+      <!-- <div class="row">
         <div class="col-md-1">
 
         </div>
@@ -116,7 +134,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
       <div class="row">
         <div class="col-md-11 col-sm-11">
 
