@@ -1,4 +1,4 @@
-﻿![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro logo.jpg?raw=True)
+﻿![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro.jpg?raw=True)
 # Team 11008, ParyavaranAI
 ## MeghNA - Megh Nowcasting and Analytics
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/logo.png?raw=True)
