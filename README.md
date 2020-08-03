@@ -136,9 +136,10 @@ and visible waves channels are provided.
 
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_1.jpeg?raw=True)
 
-![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)
+![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)(height="300" width="500")
 
 ![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif)
+<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif" height="200" width="200">
 
 ##### Model H5 Link
 [CNN LSTM](https://drive.google.com/file/d/1Th9ikwmyTGipz6Z8sfTj4QIsPR5whtOO/view?usp=sharing)
