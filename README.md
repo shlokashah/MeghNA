@@ -153,6 +153,10 @@ We take the given mask, convert it to corresponding temperature values and then 
 #### Results:
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/classification.jpeg?raw=True)
 
+![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro.jpg)
+
+
+
 ## References 
 [Links to paper referred](https://drive.google.com/file/d/17kpehylbqtQWQpIVDHA670K9nCZei4Ul/view)
 
