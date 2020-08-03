@@ -140,10 +140,10 @@ and visible waves channels are provided.
 
 <img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif" height="250" width="250">
 
+<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif" height="250" width="250">
 
 <img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9cwt.gif" height="250" width="250">
 
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif" height="250" width="250">
 ##### Model H5 Link
 [CNN LSTM](https://drive.google.com/file/d/1Th9ikwmyTGipz6Z8sfTj4QIsPR5whtOO/view?usp=sharing)
 
