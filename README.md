@@ -51,6 +51,18 @@ and visible waves channels are provided.
 - SQLite
 - Gdal and Rasterio
 
+## References 
+[Links to paper referred](https://drive.google.com/file/d/17kpehylbqtQWQpIVDHA670K9nCZei4Ul/view)
+
+## Phase I PPT
+[Phase I PPT](https://drive.google.com/file/d/1NKji3qKxTO0GgxOqGBMyX8V147v2BIXM/view?usp=sharing)
+
+## App APK
+[Flutter App APK Link](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/app.apk)
+
+## App Demo
+[Working Demo Video](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/app.apk)
+
 ## Cloud Detection
 ### K-Means Clustering
 - Calculate feature vector for each pixel
@@ -160,9 +172,4 @@ We take the given mask, convert it to corresponding temperature values and then 
 
 
 
-## References 
-[Links to paper referred](https://drive.google.com/file/d/17kpehylbqtQWQpIVDHA670K9nCZei4Ul/view)
-
-### Phase I PPT
-[Phase I PPT](https://drive.google.com/file/d/1NKji3qKxTO0GgxOqGBMyX8V147v2BIXM/view?usp=sharing)
 
