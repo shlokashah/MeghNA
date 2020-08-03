@@ -39,6 +39,7 @@ and visible waves channels are provided.
 | [classification](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/classification) | Code for cloud classification types
 | [MeghNA](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/MeghNA) | Code for the User Interface of the tool
 | [backend](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/backend) | Django REST API's
+| [Landing Page](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Landing%20Page) | Code for Product Website
 
 ## Technology Used
 
