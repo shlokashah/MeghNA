@@ -136,6 +136,9 @@ and visible waves channels are provided.
 
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_1.jpeg?raw=True)
 
+![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)
+
+![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif)
 
 ##### Model H5 Link
 [CNN LSTM](https://drive.google.com/file/d/1Th9ikwmyTGipz6Z8sfTj4QIsPR5whtOO/view?usp=sharing)
@@ -153,7 +156,6 @@ We take the given mask, convert it to corresponding temperature values and then 
 #### Results:
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/classification.jpeg?raw=True)
 
-![Alt Text](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro.jpg)
 
 
 
