@@ -127,22 +127,19 @@ and visible waves channels are provided.
 	-   Time taken to train:  **_174.56293845176697 seconds_**
 	-   Time taken to generate output:  **_0.13999462127685547 seconds_**
  
+ #### Results:
+
+Input Sequence             |  Output Sequence
+:-------------------------:|:-------------------------:
+![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)  |  ![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif)
+
+Input Sequence             |  Output Sequence
+:-------------------------:|:-------------------------:
+![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif)  |  ![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9cwt.gif)
+
 #### Model Architecture
 ![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_architecture.jpeg?raw=True)
 
-#### Results:
-
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_2.jpeg?raw=True)
-
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_1.jpeg?raw=True)
-
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif" height="250" width="250">
-
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif" height="250" width="250">
-
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif" height="250" width="250">
-
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9cwt.gif" height="250" width="250">
 
 ##### Model H5 Link
 [CNN LSTM](https://drive.google.com/file/d/1Th9ikwmyTGipz6Z8sfTj4QIsPR5whtOO/view?usp=sharing)
