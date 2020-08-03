@@ -35,10 +35,20 @@
       <div class="row">
         <!-- COLUMN 1: Display Image -->
         <div class="col-md-5 col-sm-12" id="canvasDiv">
+          <p class="card-body">
+            <span>
+              Clouds detected in the image by the K-Means algorithm are displayed below. Click on any location
+              on the canvas to explore features related to that pixel.
+            </span>
+          </p>
           <canvas id="myCanvas"></canvas>
         </div>
-        <div class="col-md-3 col-sm-6" style="padding-left: 40px;">
+        <div class="col-md-5 col-sm-6" style="padding-left: 40px;">
           <div class="row">
+            <p class="card-text">
+              In the table below, you can find a summary of the three clouds detected in the image. This summary is augmented
+              with the predicted motion of all the three clouds as shown by the location in the <strong>Predicted CoM Co-ordinates</strong> column.
+            </p>
             <table class="table table-bordered table-striped">
               <thead class="thead-dark">
                 <tr>
@@ -60,6 +70,31 @@
                   <td>{{output[3]}}</td>
                   <td>({{output[4]}},{{output[5]}})</td>
                   <td>{{output[6]}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <br/>
+          <div class="row">
+            <p>{{cloudTifPath}} Metadata: </p>
+            <table class="table table-bordered table-striped">
+              <thead class="thead-dark">
+                <tr>
+                  <th colspan="2" style="text-align: center;">Image Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Image Time</td>
+                  <td>00:300</td>
+                </tr>
+                <tr>
+                  <td>Image Dimension</td>
+                  <td>984 * 1074</td>
+                </tr>
+                <tr>
+                  <td>Image Type</td>
+                  <td>TIR</td>
                 </tr>
               </tbody>
             </table>
@@ -105,10 +140,18 @@
       <div class="row">
         <!-- COLUMN 1: Display Image -->
         <div class="col-md-6 col-sm-12">
+          <p class="card-body">
+            The below image visualizes the bounding regions for the clouds identified in the image by the Mask RCNN model.
+            Each region of interest (cloud) is also annotated with a confidence score, essentially identifying the confidence
+            with which that region is marked as a cloud.
+          </p>
           <img [src]="maskOutput" width="563" height="382" class="img-fluid" id="workflow2Elem" #workflow2Elem>
         </div>
         <div class="col-md-6 col-sm-12">
-          <p class="card-text" style="text-align: center;">MSE: {{mse}}, SSIM: {{ssim}}</p>
+          <p class="card-body">
+            The below GIF visualizes the motion of the cloud predicted via the CNN-LSTM model. The model generates the images
+            identifying cloud motion for next 4 frames.
+          </p>
           <img [src]="gifPath" width="563" height="382" class="img-fluid">
         </div>
       </div>
