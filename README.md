@@ -1,8 +1,8 @@
-﻿<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/isro.jpg" height="400" width="600">
+﻿<img src = "https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/isro.jpg" height="400" width="600">
 
 # Team 11008, ParyavaranAI
 ## MeghNA - Megh Nowcasting and Analytics
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/logo.png">
+<img src = "https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/logo.png">
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
@@ -33,13 +33,13 @@ and visible waves channels are provided.
 ## Folder Walkthrough
 | Folder Name | Service |
 |--|--|
-| [KMeans+MPA](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/KMeans+MPA) |  Code for cloud detection and motion prediction with KMeans+MPA
-| [CNN_LSTM](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/CNN_LSTM) |  Code for cloud motion prediction using CNN+LSTM
-| [Mask_RCNN](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Mask%20RCNN) | Code for cloud detection using Mask RCNN
-| [classification](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/classification) | Code for cloud classification types
-| [MeghNA](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/MeghNA) | Code for the User Interface of the tool
-| [backend](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/backend) | Django REST API's
-| [Landing Page](https://github.com/manandoshi1607/NM373_ParyavaranAI/tree/master/Landing%20Page) | Code for Product Website
+| [KMeans+MPA](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/KMeans+MPA) |  Code for cloud detection and motion prediction with KMeans+MPA
+| [CNN_LSTM](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/CNN_LSTM) |  Code for cloud motion prediction using CNN+LSTM
+| [Mask_RCNN](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/Mask%20RCNN) | Code for cloud detection using Mask RCNN
+| [classification](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/classification) | Code for cloud classification types
+| [MeghNA](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/MeghNA) | Code for the User Interface of the tool
+| [backend](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/backend) | Django REST API's
+| [Landing Page](https://github.com/shlokashah/NM373_ParyavaranAI/tree/master/Landing%20Page) | Code for Product Website
 
 ## Technology Used
 
@@ -56,9 +56,9 @@ and visible waves channels are provided.
 
 [Phase I PPT](https://drive.google.com/file/d/1NKji3qKxTO0GgxOqGBMyX8V147v2BIXM/view?usp=sharing)
 
-[Flutter App APK Link](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/app.apk)
+[Flutter App APK Link](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/app.apk)
 
-[Working Demo Video](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/AppDemo.mp4)
+[Working Demo Video](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/AppDemo.mp4)
 
 ## Cloud Detection
 ### K-Means Clustering
@@ -71,11 +71,11 @@ and visible waves channels are provided.
 
 ##### 1. Original Satellite Image
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/Original_Capture.png?raw=True)
+![Image Description](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/Original_Capture.png?raw=True)
 
 ##### 2. Clouds Mask
 
-<img src = "https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/kmeans.png" height="300" width="500">
+<img src = "https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/kmeans.png" height="300" width="500">
 
 
 
@@ -92,11 +92,11 @@ and visible waves channels are provided.
 
 ##### Satellite Image
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/satellite1.jpg?raw=True)
+![Image Description](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/satellite1.jpg?raw=True)
 
 ##### Mask RCNN Result
 
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/satellite_1.png?raw=True)
+![Image Description](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/satellite_1.png?raw=True)
 
 ##### Model H5 Link
 [Mask RCNN](https://drive.google.com/file/d/1-o9oSBf6FhlEkzMUsboSE5ce4HQ0tIyS/view?usp=sharing)
@@ -140,14 +140,14 @@ and visible waves channels are provided.
 
 Input Sequence             |  Output Sequence
 :-------------------------:|:-------------------------:
-![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)  |  ![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif)
+![](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/4a9da5.gif)  |  ![](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/4a9d5e.gif)
 
 Input Sequence             |  Output Sequence
 :-------------------------:|:-------------------------:
-![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif)  |  ![](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/4a9cwt.gif)
+![](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/4a9gzj.gif)  |  ![](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/4a9cwt.gif)
 
 #### Model Architecture
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/motion_architecture.jpeg?raw=True)
+![Image Description](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/motion_architecture.jpeg?raw=True)
 
 
 ##### Model H5 Link
@@ -164,7 +164,7 @@ Input Sequence             |  Output Sequence
 We take the given mask, convert it to corresponding temperature values and then classify each pixel. The overall mask classification is based on the category that the maximum number of pixels fall in.
 
 #### Results:
-![Image Description](https://github.com/manandoshi1607/NM373_ParyavaranAI/blob/master/docs/classification.jpeg?raw=True)
+![Image Description](https://github.com/shlokashah/NM373_ParyavaranAI/blob/master/docs/classification.jpeg?raw=True)
 
 
 
